@@ -1,0 +1,18 @@
+<launch>
+  <!-- Joy Node-->
+  <node pkg="joy" type="joy_node" name="joy" 
+        required="true" >
+
+   	<param name="dev" value="/dev/input/js0" />
+	<param name="scale_angular" value="1.5"/>
+    	<param name="scale_linear" value="0.5"/>
+    	<param name="axis_deadman" value="10"/>
+    	<param name="axis_linear" value="1"/>
+    	<param name="axis_angular" value="0"/>
+  </node>
+  <!-- Pioneer Joy Node -->
+  <node pkg="pioneer_control" type="pioneer_joy" name="pioneer_joy" 
+        required="true" args="_scale_linear:=0.25"/>
+  <node pkg="rosaria" type="RosAria"
+        required="true"/>
+</launch>
