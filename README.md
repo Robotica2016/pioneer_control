@@ -1,4 +1,4 @@
-# pioneer control
+# Pioneer Control
 Working with Pioneer 3 robot using ROS environment at University of Antwerp, Faculity of Electronics & ICT. 
 This package specifically was created for controlling the Pioneer 3 with a playstation controller.
 
